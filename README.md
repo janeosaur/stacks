@@ -70,31 +70,31 @@ Stacks are "Last In, First Out" -- the last item pushed on top of a stack will b
   * PUSH 8
 
   <details><summary>click for answer</summary>
-    ```
-    * start     []
-    * PUSH 0    [0]
-    * POP       []
-    * PUSH 2    [2]
-    * PUSH 4    [2, 4]
-    * PUSH 6    [2, 4, 6]
-    * POP       [2, 4]
-    * PUSH 8    [2, 4, 8]
-    ```
-  </details>
+
+      * start     []
+      * PUSH 0    [0]
+      * POP       []
+      * PUSH 2    [2]
+      * PUSH 4    [2, 4]
+      * PUSH 6    [2, 4, 6]
+      * POP       [2, 4]
+      * PUSH 8    [2, 4, 8]
+
+  </details><br>
 
 3. Stacks and queues are often implemented with linked lists. Think about how you'd use a linked list to make a stack.  Where will you put the "top" of the stack? How would you add something to the top the stack? How would you take something off?
 
  <details><summary>super stuck? click for an answer...</summary>
  > The "top" could be the head of the linked list. You could use `prepend` to `push` something onto the top. You could `delete` the list's head and return it to `pop`.
 
- </details>
+ </details><br>
 
 4. It's also pretty natural to use arrays for stacks given the built-in methods we have access to in JavaScript.  So, let's think of arrays.  Where would you put the "top" of the stack? How would you add something to the top the stack? How would you take something off?
 
  <details><summary>super stuck? click for an answer...</summary>
  > The "top" could be the end of the array, and you could use array methods `push` and `pop`.  Thanks, JavaScript!
 
- </details>
+ </details><br>
 
 5. **Stretch:** How would you implement a stack with a fixed-size array?
 
