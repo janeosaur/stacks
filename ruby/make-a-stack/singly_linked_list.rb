@@ -1,4 +1,4 @@
-# solutions/singly_linked_list.rb
+# make-a-stack/singly_linked_list.rb
 
 require_relative './node.rb'
 

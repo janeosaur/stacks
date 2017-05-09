@@ -1,11 +1,12 @@
 <!--
-Creator: Team, editing by Cory
-Market: SF
+Creator: SF WDI Team, Brianna
+Edited by: Cory, Brianna
+Location: SF
 -->
 
 ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 
-# Data Structures: Stacks and Queues
+# Data Structures: Stacks
 
 ### Why is this important?
 <!-- framing the "why" in big-picture/real world examples -->
@@ -18,19 +19,26 @@ There are a handful of common ways we want to organize data. Sometimes we want d
 *After this workshop, developers will be able to:*
 
 - Describe a stack by its methods and last in, first out (LIFO) behavior.
-- Build stack methods using linked list methods.
+
+<!-- - Build stack methods using linked list methods. -->
+
+- Work with stacks (as linked lists or arrays).
 
 ### Where should we be now?
 <!-- call out the skills that are prerequisites -->
 *Before this workshop, developers should already be able to:*
 
 - Describe and manipulate a linked list.
-- Write a Ruby class.
+
+<!-- - Write a Ruby class. -->
+
+- Describe and manipulate an array.
 
 ## Warmup
 
 1. How is a deck of cards similar to a linked list?
-1. What is the benefit of a linked list over an array?
+2. How is a deck of cards similar to an array?
+3. What is the benefit of a linked list over an array?
 
 
 ##Stacks
@@ -50,7 +58,8 @@ Stacks are "Last In, First Out" -- the last item pushed on top of a stack will b
 ### Thinking with Stacks
 
 1. What are some real life structures or objects that a stack could simulate well?
-1. Draw a stack after each of the following operations:
+
+2. Draw a stack after each of the following operations:
 
   * PUSH 0
   * POP
@@ -73,16 +82,18 @@ Stacks are "Last In, First Out" -- the last item pushed on top of a stack will b
     ```
   </details>
 
-1. Stacks and queues are often implemented with linked lists. Think about how you'd use a linked list to make a stack.  Where will you put the "top" of the stack? How would you add something to the top the stack? How would you take something off?
+3. Stacks and queues are often implemented with linked lists. Think about how you'd use a linked list to make a stack.  Where will you put the "top" of the stack? How would you add something to the top the stack? How would you take something off?
 
  <details><summary>super stuck? click for an answer...</summary>
  > The "top" could be the head of the linked list. You could use `prepend` to `push` something onto the top. You could `delete` the list's head and return it to `pop`.
+
  </details>
 
-1. It's also pretty natural to use arrays for stacks given the built-in methods we have access to in JavaScript.  So, let's think of arrays.  Where would you put the "top" of the stack? How would you add something to the top the stack? How would you take something off?
+4. It's also pretty natural to use arrays for stacks given the built-in methods we have access to in JavaScript.  So, let's think of arrays.  Where would you put the "top" of the stack? How would you add something to the top the stack? How would you take something off?
 
  <details><summary>super stuck? click for an answer...</summary>
  > The "top" could be the end of the array, and you could use array methods `push` and `pop`.  Thanks, JavaScript!
+
  </details>
 
 1. **Stretch:** How would you implement a stack with a fixed-size array?
@@ -100,7 +111,7 @@ Would you use a stack or a queue to...
 1. ... display *only* the 10 most recent messages a user posted, in the order they were posted?
 
 
-#### Stacks
+#### Applications for Stacks
 
 1. **The Call Stack**
 
@@ -126,4 +137,4 @@ Would you use a stack or a queue to...
 
  Write out the full call stack for `factorial(3)` at each step in the function's execution.
 
-1. **Stretch:** Try out [this stack challenge](stacks-challenge.md), an epic battle for correct code!
+2. **Stretch:** Try out [this stack challenge](challenge.md), an epic battle for correct code!
